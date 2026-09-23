@@ -12,7 +12,19 @@ Règle de maîtrise pour chaque sujet : tu peux l'expliquer à voix haute, sans 
 
 # PARTIE A — Le projet NetPractice (nécessaire)
 
+## vocabulaire et fondamentaux réseau:
+### c'est quoi un réseau ?
+Un reseau c'est un ensemble d'appareil capable de communiquer entre eux.
+### Qu'est-ce qu'une information envoyée ?
+Les ordinateurs manipulent des données sous forme numérique, et ces données doivent être transportées d'un appareil à un autre.
+### Premier vocabulaire
+
+- `Host`: Un host est simplement un appareil présent sur un réseau et capable de communiquer sur celui-ci.
+- `Client`: Un client est un appareil qui demande quelque chose a un ordinateur. 
+- `Server`: Un server est un ordinateur qui repond a une requete d'un client.
+
 ## A1. Conversion binaire ↔ décimal
+[]
 **Pourquoi** : tout le reste (masques, sous-réseaux, adresses) repose sur la capacité à lire un octet en binaire instantanément. Sans ça, tu comptes sur tes doigts pendant l'évaluation chronométrée.
 **Exercices** : cherche → `binary to decimal conversion practice exercises subnetting`
 
