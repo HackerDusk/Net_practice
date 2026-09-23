@@ -53,6 +53,13 @@
       * [What is ethernet?](https://www.net-usb.com/fr/usb-over-ethernet-system/what-is-ethernet/)
       * [What is an ethernet cable](https://ascentoptics.com/blog/fr/rj-45-cable/)
       * [Ethernet Cable Connector (RJ45) 3D model](https://sketchfab.com/3d-models/ethernet-cable-connector-rj45-325672cf996e472abaed009b5ca21cfc)
+    * Wi-Fi:
+        * [What is Wi-Fi?](lien à trouver)
+        * [How Wi-Fi works (basics)](lien à trouver)
+    * Network Interface Card (NIC):
+        * [What is a NIC?](lien à trouver)
+    * MAC Address:
+        * [What is a MAC address?](lien à trouver)
 
 * [Bandwidth vs. throughput](https://www.tp-link.com/fr/blog/208/bande-passante-vs-d%C3%A9bit/)
 
