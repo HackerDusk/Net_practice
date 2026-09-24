@@ -18,18 +18,27 @@ Un reseau c'est un ensemble d'appareil capable de communiquer entre eux.
 ### Qu'est-ce qu'une information envoyée ?
 Les ordinateurs manipulent des données sous forme numérique, et ces données doivent être transportées d'un appareil à un autre.
 ### Premier vocabulaire
-
 - `Host`: Un host est simplement un appareil présent sur un réseau et capable de communiquer sur celui-ci.
 - `Client`: rôle qui demande/utilise un service
 - `Server`: rôle qui fournit un service
 - `internet`: ensemble de réseaux interconnectés
 
-## Les types de réseaux (PAN, LAN, MAN, WAN)
+### La différence fondamentale entre PAN, LAN, MAN et WAN:
+- PAN (Personal Area Network): c'est une connection a courte distance dedier a des peripheriques personnel connecter entre eux (telephone, montre, mes ecouteur bluetooth).
+- LAN (Local Area Network) c'est des peripheriaue qui sont connecter entre eux par cable ethernet c'est a dire par cable ethernet (Protocole Ethernet) ou par WIFI (protocole WIFI sans file mais par onde radio ou par fibre optiaque ou par je m'en rappelle pas).
+- MAN (Metropolitan Area Network)c'est un ensemble de LAN qui peuvent communiquer entre eux.
+- WAN (Wide Area Network) c'est comme MAN je pense mais vraiment tres tres grand et ca ne lis pas seulement des LAN, il peut lier des MAN ouff.
+
+### Est-ce qu'Internet est simplement « un WAN » ? Pourquoi ?
+- NON, l'internet n'est pas simplement un WAN, d'ailleur c'est surtout une representation parfaite d'un WAN + une inetsection entre pleusieur type de reseau (reseau des reseau).
+
+### Deux ordinateurs dans la même maison : quel type de réseau pourrais-tu avoir ?
+LAN (Local Area Network) ou reseau local ou domestique
 
 ## A1. Conversion binaire ↔ décimal
 []
-**Pourquoi** : tout le reste (masques, sous-réseaux, adresses) repose sur la capacité à lire un octet en binaire instantanément. Sans ça, tu comptes sur tes doigts pendant l'évaluation chronométrée.
-**Exercices** : cherche → `binary to decimal conversion practice exercises subnetting`
+- **Pourquoi** : tout le reste (masques, sous-réseaux, adresses) repose sur la capacité à lire un octet en binaire instantanément. Sans ça, tu comptes sur tes doigts pendant l'évaluation chronométrée.
+- **Exercices** : cherche → `binary to decimal conversion practice exercises subnetting`
 
 ## A2. Adresse IPv4 : structure et notation
 **Pourquoi** : une IP = 32 bits = 4 octets, lue comme « partie réseau + partie hôte ». C'est le socle de tout le projet. Connais aussi les plages privées (`10/8`, `172.16/12`, `192.168/16`) et les adresses spéciales (`127.0.0.0/8` loopback, `169.254.0.0/16` APIPA).
