@@ -20,8 +20,11 @@ Les ordinateurs manipulent des données sous forme numérique, et ces données d
 ### Premier vocabulaire
 
 - `Host`: Un host est simplement un appareil présent sur un réseau et capable de communiquer sur celui-ci.
-- `Client`: Un client est un appareil qui demande quelque chose a un ordinateur. 
-- `Server`: Un server est un ordinateur qui repond a une requete d'un client.
+- `Client`: rôle qui demande/utilise un service
+- `Server`: rôle qui fournit un service
+- `internet`: ensemble de réseaux interconnectés
+
+## Les types de réseaux (PAN, LAN, MAN, WAN)
 
 ## A1. Conversion binaire ↔ décimal
 []
