@@ -25,9 +25,11 @@ Les ordinateurs manipulent des données sous forme numérique, et ces données d
 
 ### La différence fondamentale entre PAN, LAN, MAN et WAN:
 - PAN (Personal Area Network): c'est une connection a courte distance dedier a des peripheriques personnel connecter entre eux (telephone, montre, mes ecouteur bluetooth).
-- LAN (Local Area Network) c'est des peripheriaue qui sont connecter entre eux par cable ethernet c'est a dire par cable ethernet (Protocole Ethernet) ou par WIFI (protocole WIFI sans file mais par onde radio ou par fibre optiaque ou par je m'en rappelle pas).
-- MAN (Metropolitan Area Network)c'est un ensemble de LAN qui peuvent communiquer entre eux.
-- WAN (Wide Area Network) c'est comme MAN je pense mais vraiment tres tres grand et ca ne lis pas seulement des LAN, il peut lier des MAN ouff.
+- LAN = réseau local ; Ethernet et WiFi sont les technologies utilisées pour y faire communiquer les appareils.
+- MAN (Metropolitan Area Network) : réseau à l'échelle d'une ville/zone métropolitaine.
+  Peut interconnecter plusieurs LAN, mais ce n'est pas sa définition — juste un usage fréquent.
+- WAN (Wide Area Network) : réseau à grande échelle géographique (région, pays, continent).
+  Peut interconnecter des LAN, des MAN, ou d'autres WAN.
 
 ### Est-ce qu'Internet est simplement « un WAN » ? Pourquoi ?
 - NON, l'internet n'est pas simplement un WAN, d'ailleur c'est surtout une representation parfaite d'un WAN + une inetsection entre pleusieur type de reseau (reseau des reseau).

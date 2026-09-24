@@ -3,7 +3,7 @@
 # Net_practice
 
 # Ressources:
-- [`Learned everything by practice (I love this one)`](https://networksim.app/)
+- [`Learn everything by practice on networksim.app (I love this one)`](https://networksim.app/)
 - [What is the Internet? Computer networks](https://youtu.be/JqweQE6TDTc?si=YUSM_-i7HTAc4-Hk)
 - [What is a computer peripheral, and why is it important?](https://www.lenovo.com/fr/fr/glossary/computer-peripheral/?orgRef=https%253A%252F%252Fwww.google.com%252F)
 - List of key vocabularies:
@@ -63,3 +63,4 @@
     - [lk3](https://www.domolane.fr/glossaire-reseau/)
     - [lk4](https://blog.stephane-robert.info/docs/reseaux/fondamentaux/bases-absolues/)
     - [lk5](https://www.it-connect.fr/les-types-de-reseaux-lan-man-wan-et-pan-pour-les-debutants/)
+    - [lk6](https://www.formip.com/pages/blog/masque-de-sous-reseau)
