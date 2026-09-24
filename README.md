@@ -3,6 +3,7 @@
 # Net_practice
 
 # Ressources:
+- [`Learned everything by practice (I love this one)`](https://networksim.app/)
 - [What is the Internet? Computer networks](https://youtu.be/JqweQE6TDTc?si=YUSM_-i7HTAc4-Hk)
 - [What is a computer peripheral, and why is it important?](https://www.lenovo.com/fr/fr/glossary/computer-peripheral/?orgRef=https%253A%252F%252Fwww.google.com%252F)
 - List of key vocabularies:
@@ -31,15 +32,28 @@
             - [What is ethernet ?](https://www.net-usb.com/fr/usb-over-ethernet-system/what-is-ethernet/)
             - [What is an ethernet cable](https://ascentoptics.com/blog/fr/rj-45-cable/)
             - [Ethernet Cable Connector (RJ45) 3D model](https://sketchfab.com/3d-models/ethernet-cable-connector-rj45-325672cf996e472abaed009b5ca21cfc)
-
         - Wi-Fi:
-            - [What is Wi-Fi?](lien à trouver)
-            - [How Wi-Fi works (basics)](lien à trouver)
-        - Network Interface Card (NIC):
-            - [What is a NIC?](lien à trouver)
-        - MAC Address:
-            - [What is a MAC address?](lien à trouver)
-
+            - [What is Wi-Fi?](https://www.geeksforgeeks.org/computer-networks/basics-of-wi-fi/)
+            - [radio waves](https://sherpas.com/blog/ondes-radio/)
+            - [IEEE 802.11 norm](https://fr.wikipedia.org/wiki/IEEE_802.11)
+            - [the box, the modem, the router, and the Wi-Fi access point](https://pro.orange.fr/lemag/box-modem-routeur-borne-quel-equipement-choisir-pour-mon-activite-CNT000002aALa0.html)
+            - Network Interface Card (NIC):
+                - [modem 3D model](https://sketchfab.com/3d-models/simple-modem-8ef942f9125a4e09978021ec190cca4e)
+                - [What is a Network Interface Card?](https://web.maths.unsw.edu.au/~lafaye/CCM/pc/carte-reseau.htm)
+                - [NIC 3D model](https://sketchfab.com/3d-models/network-interface-card-191c8ad40de2430980b879615aa0d2e3)
+            - Address IP:
+                - [definition & details](https://www.formip.com/pages/blog/adresse-ip)
+            - MAC Address:
+                - What is a MAC address?:
+                    - [doc1](https://www.formip.com/pages/blog/adresse-mac)
+                    - [doc2](https://windscribe.com/fr/knowledge-base/articles/what-is-mac-spoofing-and-how-to-use-it)
+                - [MAC Address vs. IP Address: What’s the difference?](https://www.formip.com/pages/blog/adresse-mac)
+    - [MAN](https://www.edrawsoft.com/fr/article/man-network-diagram.html)
+    - WAN:
+        - [LAN vs WAN]:
+            - [doc1](https://www.scribd.com/document/909426972/LES-COMPOSANTS-DES-RESEAUX-LAN-ET-WAN)
+            - [doc2](https://www.lafibrelyonnaise.fr/lan-vs-wan)
+    - [successive Euclidean divisions review](https://www.logamaths.fr/pgcd-divisions-euclidiennes-successives-algorithme-d-euclide/)
 - [Bandwidth vs. throughput](https://www.tp-link.com/fr/blog/208/bande-passante-vs-d%C3%A9bit/)
 - [The Best Way To Learn Networking](https://www.youtube.com/watch?v=OBqCYxhwR_o)
 
