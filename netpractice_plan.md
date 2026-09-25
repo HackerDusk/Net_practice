@@ -38,19 +38,22 @@ Les ordinateurs manipulent des données sous forme numérique, et ces données d
 LAN (Local Area Network) ou reseau local ou domestique
 
 ## A1. Conversion binaire ↔ décimal
-[]
+[OK]
 - **Pourquoi** : tout le reste (masques, sous-réseaux, adresses) repose sur la capacité à lire un octet en binaire instantanément. Sans ça, tu comptes sur tes doigts pendant l'évaluation chronométrée.
 - **Exercices** : cherche → `binary to decimal conversion practice exercises subnetting`
 
 ## A2. Adresse IPv4 : structure et notation
+[OK]
 **Pourquoi** : une IP = 32 bits = 4 octets, lue comme « partie réseau + partie hôte ». C'est le socle de tout le projet. Connais aussi les plages privées (`10/8`, `172.16/12`, `192.168/16`) et les adresses spéciales (`127.0.0.0/8` loopback, `169.254.0.0/16` APIPA).
 **Exercices** : pas nécessaire si A1 est acquis. C'est de la lecture, pas du calcul.
 
 ## A3. Masque de sous-réseau & notation CIDR
+[OK]
 **Pourquoi** : le masque définit où s'arrête le « réseau » et où commence l'« hôte ». C'est LE concept que NetPractice teste en boucle : chaque champ « Mask » doit être cohérent avec l'IP en face.
 **Exercices** : cherche → `CIDR notation subnet mask practice problems with answers`
 
 ## A4. Adresse réseau, broadcast, plage utilisable
+[OK]
 **Pourquoi** : à chaque niveau, tu dois vérifier qu'une IP est dans la plage utilisable de son sous-réseau, et qu'elle n'est ni l'adresse réseau ni le broadcast (pièges fréquents).
 **Exercices** : cherche → `subnetting exercises calculate network address broadcast usable range`
 

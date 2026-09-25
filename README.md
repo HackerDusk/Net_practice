@@ -42,12 +42,22 @@
                 - [What is a Network Interface Card?](https://web.maths.unsw.edu.au/~lafaye/CCM/pc/carte-reseau.htm)
                 - [NIC 3D model](https://sketchfab.com/3d-models/network-interface-card-191c8ad40de2430980b879615aa0d2e3)
             - Address IP:
-                - [definition & details](https://www.formip.com/pages/blog/adresse-ip)
+                - [definition](https://www.formip.com/pages/blog/adresse-ip)
+                - Subnetting:
+                    - [What is subnetting?](https://www.ionos.fr/digitalguide/serveur/know-how/subnetting-comment-fonctionnent-les-sous-reseaux/)
+                    - Understanding IP addresses and subnets:
+                        - [DevSecOps](https://blog.stephane-robert.info/docs/reseaux/fondamentaux/ip-sous-reseaux/)
+                        - [calculat.io](https://calculat.io/en/number/bin-to-dec)
+                        - [Magic Number and Binary Calculation!](https://youtu.be/SMW3enlScT8?si=x-7MFmnhC-gohJNX)
+                        - [ionos.fr](https://www.ionos.fr/digitalguide/serveur/know-how/subnetting-comment-fonctionnent-les-sous-reseaux/)
+
+            - [magic number methode](https://youtu.be/SMW3enlScT8?si=8Cp5P6TnjeQgfOKV)
             - MAC Address:
                 - What is a MAC address?:
                     - [doc1](https://www.formip.com/pages/blog/adresse-mac)
                     - [doc2](https://windscribe.com/fr/knowledge-base/articles/what-is-mac-spoofing-and-how-to-use-it)
                 - [MAC Address vs. IP Address: What’s the difference?](https://www.formip.com/pages/blog/adresse-mac)
+            - [The 14 essential protocols](https://www.lemagit.fr/conseil/Reseau-comprendre-les-14-protocoles-essentiels)
     - [MAN](https://www.edrawsoft.com/fr/article/man-network-diagram.html)
     - WAN:
         - [LAN vs WAN]:
@@ -59,7 +69,7 @@
 
 - Not checked yet:
     - [lk1](https://www.assistancescolaire.com/eleve/4e/technologie/reviser-une-notion/4_tec_06)
-    - [lk2](https://www.lemagit.fr/conseil/Reseau-comprendre-les-14-protocoles-essentiels)
+    - [lk2](https://web.maths.unsw.edu.au/~lafaye/CCM/internet/port.htm)
     - [lk3](https://www.domolane.fr/glossaire-reseau/)
     - [lk4](https://blog.stephane-robert.info/docs/reseaux/fondamentaux/bases-absolues/)
     - [lk5](https://www.it-connect.fr/les-types-de-reseaux-lan-man-wan-et-pan-pour-les-debutants/)
