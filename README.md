@@ -64,13 +64,13 @@
             - [doc1](https://www.scribd.com/document/909426972/LES-COMPOSANTS-DES-RESEAUX-LAN-ET-WAN)
             - [doc2](https://www.lafibrelyonnaise.fr/lan-vs-wan)
     - [successive Euclidean divisions review](https://www.logamaths.fr/pgcd-divisions-euclidiennes-successives-algorithme-d-euclide/)
+- [The flow of information within a computer network](The flow of information within a computer network)
 - [Bandwidth vs. throughput](https://www.tp-link.com/fr/blog/208/bande-passante-vs-d%C3%A9bit/)
 - [The Best Way To Learn Networking](https://www.youtube.com/watch?v=OBqCYxhwR_o)
 
 - Not checked yet:
-    - [lk1](https://www.assistancescolaire.com/eleve/4e/technologie/reviser-une-notion/4_tec_06)
     - [lk2](https://web.maths.unsw.edu.au/~lafaye/CCM/internet/port.htm)
     - [lk3](https://www.domolane.fr/glossaire-reseau/)
-    - [lk4](https://blog.stephane-robert.info/docs/reseaux/fondamentaux/bases-absolues/)
     - [lk5](https://www.it-connect.fr/les-types-de-reseaux-lan-man-wan-et-pan-pour-les-debutants/)
     - [lk6](https://www.formip.com/pages/blog/masque-de-sous-reseau)
+    - [lk7](https://ipcisco.com/subnetting-cheat-sheet/)
