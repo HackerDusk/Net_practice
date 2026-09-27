@@ -74,3 +74,46 @@
     - [lk5](https://www.it-connect.fr/les-types-de-reseaux-lan-man-wan-et-pan-pour-les-debutants/)
     - [lk6](https://www.formip.com/pages/blog/masque-de-sous-reseau)
     - [lk7](https://ipcisco.com/subnetting-cheat-sheet/)
+    - Default Gateway:
+        - [What is a default gateway?](https://www.cloudflare.com/learning/network-layer/what-is-a-default-gateway/)
+    - OSI Model:
+        - [The OSI model explained](https://www.cloudflare.com/learning/ossi-model/what-is-the-osi-model/)
+    - TCP/IP model:
+        - [TCP/IP vs OSI](https://www.geeksforgeeks.org/computer-networks/tcp-ip-model/)
+    - History of IP addressing (classful → subnetting → CIDR):
+    - [RFC 950 — Internet Standard Subnetting Procedure (1985)](https://www.rfc-editor.org/rfc/rfc950)
+    - [RFC 1519 — Classless Inter-Domain Routing (CIDR) (1993)](https://www.rfc-editor.org/rfc/rfc1519)
+    - [Classless Inter-Domain Routing (CIDR) explained](https://networklessons.com/subnetting/classless-interdomain-routing-cidr)
+    - static route destination gateway explained (anglais, en général plus de contenu clair)
+    - table de routage réseau passerelle (français)
+    - longest prefix match routing — si tu veux comprendre comment on choisit entre plusieurs routes qui matchent toutes une - - même IP (mentionné juste avant, mais pas creusé)
+    - default route 0.0.0.0/0 — pour retomber sur exactement ce qu'on vient de voir, formulé par d'autres
+    - IP routing table longest prefix match
+    - default route vs default gateway
+    - le VLSM (découper un réseau à l'envers, à partir d'un besoin en hôtes) et le dépannage multi-sauts (plusieurs routeurs à la suite, plusieurs routes à corriger en chaîne). 
+
+
+## Quick calculation reminder
+
+### Definitions (read first)
+
+- **Cut octet**: among the mask's 4 octets, the one whose value is **neither `0` nor `255`** (a mix of network bits and host bits). This is the **only** place where a calculation is needed — every other octet is compared directly, no math involved.
+- **Block**: the size of one slice (the number of consecutive addresses that make up a subnet), measured only on the cut octet.
+  `block = 256 − (mask value on the cut octet)`
+- **Quotient**: the integer-division quotient of **(cut octet's value in the IP) ÷ block**. Tells you **which slice** (which subnet) this address falls into.
+- **Remainder**: the remainder of that same division, **(cut octet's value) MOD block**. Tells you the address's **exact position** inside its slice (0 = very first, block−1 = very last).
+- **Subnet**: the entire slice — every possible address in it, from the first to the last, inclusive.
+- **Network address**: the **very first** address of a subnet (position 0 in the slice). Only used to **name** the subnet — never assignable to a machine.
+- **Broadcast address**: the **very last** address of a subnet (last possible position). Used to send a message to **every** machine in the subnet at once — never assignable to a single machine.
+
+### Method
+
+| Step | Exact formula | Why |
+|---|---|---|
+| 1. Block | `block = 256 − mask_value_on_cut_octet` | Size of the slice this address belongs to. |
+| 2. Find the cut octet | The 1st mask octet that is neither `0` nor `255` | Before it: everything is network (must match exactly). After it: everything is host (free). Only this one is mixed. |
+| 3. Quotient and remainder | `quotient = cut_octet_value_in_IP ÷ block` (integer division); `remainder = cut_octet_value_in_IP MOD block` | Quotient = which slice. Remainder = which position inside that slice. |
+| 4. Network address | On the cut octet: `quotient × block`. Octets before: same as the IP. Octets after: `0`. | First address of the slice = all host bits set to 0. |
+| 5. Broadcast address | On the cut octet: `(quotient × block) + block − 1`. Octets before: same as the IP. Octets after: `255`. | Last address of the slice = all host bits set to 1. |
+| 6. Same subnet, two hosts? | Octets **before** the cut octet identical **AND** the two quotients (on the cut octet) identical | Easy trap when only working on the 4th octet: the 1st condition is automatically true there, so it gets forgotten. With /20, /18, etc., two hosts can share the same quotient but differ in an earlier octet — that is **not** the same subnet. |
+| 7. Is the address valid? | remainder `= 0` → network address (invalid). remainder `= block − 1` → broadcast (invalid). Otherwise → valid host. **This rule alone only holds when the cut octet is the LAST octet of the address.** If it isn't the last one, also check the octet(s) **after** it: they must be `0` to confirm "network", or `255` to confirm "broadcast" — otherwise a remainder of 0 or block−1 can still be a perfectly valid host address. | Network and broadcast name the slice itself, never a machine — but that identity only holds when there's nothing left to check after the cut point. |

@@ -37,6 +37,29 @@ Les ordinateurs manipulent des données sous forme numérique, et ces données d
 ### Deux ordinateurs dans la même maison : quel type de réseau pourrais-tu avoir ?
 LAN (Local Area Network) ou reseau local ou domestique
 
+## règle route:
+Ce qui est déjà sur mon réseau direct → pas de route nécessaire, ça marche tout seul (comme A1 ↔ R1 maintenant).
+Pour tout le reste, je dois trouver : quel est le prochain appareil directement joignable par moi qui me rapproche de la destination ? (le next-hop, toujours une IP que je peux déjà atteindre directement — sinon la route est inutilisable).
+Ensuite, une seule question tranche le format de la règle :
+Est-ce que TOUT ce qui n'est pas chez moi part par le même next-hop ? → une seule règle default suffit, pas besoin de lister chaque réseau.
+Est-ce que ça dépend de la destination (plusieurs routeurs, plusieurs chemins possibles) ? → là il faut des routes précises, une par destination/next-hop différent, parce qu'un default unique ne pourrait pas distinguer les deux chemins.
+Règle à retenir : si plusieurs routes pourraient matcher une même IP, c'est la plus précise (le masque le plus grand) qui gagne — default n'intervient qu'en dernier recours, quand rien de plus précis ne colle.
+
+Format : destination => next-hop.
+Premier (gauche) = ce que tu essaies d'atteindre — un réseau précis (réseau/masque) ou default pour "tout le reste".
+Deuxième (droite) = le next-hop — l'IP du voisin directement joignable à qui tu confies le paquet.
+
+Sur les masques par cœur : non, pas besoin de mémoriser une table à part — c'est directement lié à ce que tu maîtrises déjà (bloc = 256 − octet). Le lien : le nombre de bits de masque dans l'octet coupé = combien de fois tu divises 256 par 2 pour arriver à ton bloc.
+
+bloc 128 → 1 bit → /25
+bloc 64 → 2 bits → /26
+bloc 32 → 3 bits → /27
+bloc 16 → 4 bits → /28
+bloc 8 → 5 bits → /29
+bloc 4 → 6 bits → /30
+
+Et le total CIDR = (nombre d'octets à 255 × 8) + ces bits-là. Ex : 255.255.255.128 → trois octets à 255 (24) + bloc 128 (1 bit) = /25. Ça, ça vaut le coup de le retenir — tu vas t'en servir à chaque niveau.
+
 ## A1. Conversion binaire ↔ décimal
 [OK]
 - **Pourquoi** : tout le reste (masques, sous-réseaux, adresses) repose sur la capacité à lire un octet en binaire instantanément. Sans ça, tu comptes sur tes doigts pendant l'évaluation chronométrée.
@@ -58,6 +81,7 @@ LAN (Local Area Network) ou reseau local ou domestique
 **Exercices** : cherche → `subnetting exercises calculate network address broadcast usable range`
 
 ## A5. Calcul rapide des puissances de 2 (tailles de bloc)
+[OK]
 **Pourquoi** : en évaluation, seul `bc` est toléré. Connais par cœur 2^1 à 2^16 pour aller vite.
 **Exercices** : cherche → `powers of 2 table subnetting cheat sheet drill`
 
