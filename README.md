@@ -58,6 +58,13 @@
                     - [doc2](https://windscribe.com/fr/knowledge-base/articles/what-is-mac-spoofing-and-how-to-use-it)
                 - [MAC Address vs. IP Address: What’s the difference?](https://www.formip.com/pages/blog/adresse-mac)
             - [The 14 essential protocols](https://www.lemagit.fr/conseil/Reseau-comprendre-les-14-protocoles-essentiels)
+            - [ARP protocol](https://www.fortinet.com/fr/resources/cyberglossary/what-is-arp)
+            - [DHCP protocol](https://learn.microsoft.com/fr-fr/windows-server/networking/technologies/dhcp/dhcp-top)
+            - [What is a domain name?](https://www.one2net.fr/nom-domaine/qu-est-ce-qu-un-nom-de-domaine/)
+            - TCP/IP Addressing:
+                - [doc1](https://www.ibm.com/docs/fr/aix/7.3.0?topic=protocol-tcpip-addressing)
+                - [doc2](https://www.ibm.com/docs/fr/aix/7.3.0?topic=management-transmission-control-protocolinternet-protocol)
+
     - [MAN](https://www.edrawsoft.com/fr/article/man-network-diagram.html)
     - WAN:
         - [LAN vs WAN]:
@@ -70,6 +77,7 @@
 
 - Not checked yet:
     - [lk2](https://web.maths.unsw.edu.au/~lafaye/CCM/internet/port.htm)
+    - [TCP/IP vs OSI](https://www.geeksforgeeks.org/computer-networks/tcp-ip-model/)
     - [lk3](https://www.domolane.fr/glossaire-reseau/)
     - [lk5](https://www.it-connect.fr/les-types-de-reseaux-lan-man-wan-et-pan-pour-les-debutants/)
     - [lk6](https://www.formip.com/pages/blog/masque-de-sous-reseau)
@@ -78,8 +86,6 @@
         - [What is a default gateway?](https://www.cloudflare.com/learning/network-layer/what-is-a-default-gateway/)
     - OSI Model:
         - [The OSI model explained](https://www.cloudflare.com/learning/ossi-model/what-is-the-osi-model/)
-    - TCP/IP model:
-        - [TCP/IP vs OSI](https://www.geeksforgeeks.org/computer-networks/tcp-ip-model/)
     - History of IP addressing (classful → subnetting → CIDR):
     - [RFC 950 — Internet Standard Subnetting Procedure (1985)](https://www.rfc-editor.org/rfc/rfc950)
     - [RFC 1519 — Classless Inter-Domain Routing (CIDR) (1993)](https://www.rfc-editor.org/rfc/rfc1519)
