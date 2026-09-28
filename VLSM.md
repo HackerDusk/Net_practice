@@ -193,6 +193,8 @@ echo "256-248" | bc
 cette espace libre commence a .248
 
 exo 4: un bloc plus grand
+10.10.0.0/23
+
 Vérification d'abord si tout tient : addition des tailles de blocs avant d'allouer quoi que ce soit.
 Campus:
 n = 32 - (ln(202)/ln(2)) = 24
@@ -210,7 +212,7 @@ Serveurs:
 n = 32 - (ln(32)/ln(2)) = 27
 bloc = 2^(32 - 27) = 32
 3 liens entre routeurs:
-*----* -> 2  
+*---- * -> 2  
 *----- * -> 2
 *---- * -> 2
 n = 32 - (ln(4)/ln(2)) = 30
@@ -218,6 +220,33 @@ bloc = 2^(32 - 30) * 3 = 12
 
 bloc occupe: 492, on est bon
 
-Alloue dans le bon ordre. Pour chaque sous-réseau, donne préfixe, adresse réseau, broadcast et plage utilisable (attention au 3e octet).
+Allocation dans le bon ordre. Pour chaque sous-réseau, donne préfixe, adresse réseau, broadcast et plage utilisable (attention au 3e octet).
+
+Campus:
+/24 = 255.255.255.0
+adresse réseau = 10.10.0.0
+adresse broadcast = 10.10.0.255
+plage: 10.10.0.1-10.10.0.254
+
+Bibliothèque:
+/25 = 255.255.255.128
+adresse réseau = 10.10.1.0
+adresse broadcast = 10.10.127.255
+plage: 10.10.1.1-10.10.127.254
+
+Administration:
+/26 = 255.255.255.192
+adresse réseau =
+adresse broadcast =
+plage:
+
+Serveurs:
+/27 = 255.255.255.0
+adresse réseau = 10.10.0.0
+adresse broadcast = 10.10.0.255
+plage: 10.10.0.1-10.10.0.254
+
+
+
 Indique ce qu'il reste de libre, et où ça commence.
 Fais le schéma.
