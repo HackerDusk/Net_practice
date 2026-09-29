@@ -26,10 +26,10 @@ Aucun outil supplémentaire à chercher — tu as déjà tout ce qu'il faut (WSL
 
 ## Types d'exercices à connaître et pratiquer
 
-- **A. Vérification express** *(acquis)* — IP + masque donnés → bloc/quotient/reste/validité en 30 secondes. Sert d'échauffement, pas de nouvel apprentissage.
-- **B. VLSM à l'envers** *(en cours)* — nombre d'hôtes voulu → trouver le masque (/n et décimal). Un succès autonome (400 hôtes → /23), à consolider par répétition.
-  - *Exercice B1 en attente* : 30 machines → quel masque (/n + décimal) ?
-- **C. Découpage complet — rôle sysadmin** *(nouveau, pas encore pratiqué)* — un bloc de départ + une liste de services avec leurs besoins en hôtes → découper tout le bloc soi-même, sans chevauchement, du plus grand besoin au plus petit ("largest-first").
+- [OK] **A. Vérification express** *(acquis)* — IP + masque donnés → bloc/quotient/reste/validité en 30 secondes. Sert d'échauffement, pas de nouvel apprentissage.
+- [Ok] **B. VLSM à l'envers** *(en cours)* — nombre d'hôtes voulu → trouver le masque (/n et décimal). Un succès autonome (400 hôtes → /23), à consolider par répétition.
+- *Exercice B1 en attente* : 30 machines → quel masque (/n + décimal) ?
+- [OK] **C. Découpage complet — rôle sysadmin** *(nouveau, pas encore pratiqué)* — un bloc de départ + une liste de services avec leurs besoins en hôtes → découper tout le bloc soi-même, sans chevauchement, du plus grand besoin au plus petit ("largest-first").
   - *Exercice C1 en attente* : bloc `192.168.10.0/24`, 4 services (Ventes 60, IT 25, RH 10, Salle de réunion 2) → masque, réseau, broadcast, plage utilisable pour chacun.
 - **D. Dépannage (troubleshooting)** *(pas encore pratiqué hors zip)* — diagramme avec une erreur cachée à repérer par le raisonnement, dans l'esprit de NetPractice mais en variantes inventées.
 - **E. Table de routage / passerelle** *(pas encore pratiqué hors zip)* — plusieurs routeurs, vérifier ou corriger une route/passerelle mal placée.

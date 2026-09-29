@@ -231,22 +231,92 @@ plage: 10.10.0.1-10.10.0.254
 Bibliothèque:
 /25 = 255.255.255.128
 adresse réseau = 10.10.1.0
-adresse broadcast = 10.10.127.255
-plage: 10.10.1.1-10.10.127.254
+adresse broadcast = 10.10.1.127
+plage: 10.10.1.1-10.10.1.126
 
 Administration:
 /26 = 255.255.255.192
-adresse réseau =
-adresse broadcast =
-plage:
+adresse réseau = 10.10.1.128  
+adresse broadcast = 10.10.1.191
+plage: 10.10.1.129-10.10.1.190
 
 Serveurs:
-/27 = 255.255.255.0
-adresse réseau = 10.10.0.0
-adresse broadcast = 10.10.0.255
-plage: 10.10.0.1-10.10.0.254
+/27 = 255.255.255.224
+adresse réseau = 10.10.1.192
+adresse broadcast = 10.10.1.223
+plage: 10.10.1.193-10.10.1.222
+
+R1 - R2:
+/30 = 255.255.255.252
+adresse réseau = 10.10.1.224
+adresse broadcast = 10.10.1.227
+plage: 10.10.1.225-10.10.1.226
+
+R3 - R4:
+/30 = 255.255.255.252
+adresse réseau = 10.10.1.228
+adresse broadcast = 10.10.1.231
+plage: 10.10.1.229-10.10.1.230
+
+R5 - R6;
+/30 = 255.255.255.252
+adresse réseau = 10.10.1.232
+adresse broadcast = 10.10.1.235
+plage: 10.10.1.233-10.10.1.234
 
 
+Indication de ce qu'il reste de libre, et où ça commence.
+reste = 512 - 492 = 20 et ca commence a .236
+Le schéma:
 
-Indique ce qu'il reste de libre, et où ça commence.
-Fais le schéma.
+10.10.0.0   ┌────────────────┐
+            │     Campus     │  /24
+10.10.1.0   ├────────────────┤
+            │  Bibliothèque  │  /25
+10.10.1.128 ├────────────────┤
+            │ Administration │  /26
+10.10.1.192 ├────────────────┤
+            │    Serveurs    │  /27
+10.10.1.224 ├────────────────┤
+            │     R1-R2      │  /30
+10.10.1.228 ├────────────────┤
+            │     R3-R4      │  /30
+10.10.1.232 ├────────────────┤
+            │     R5-R6      │  /30
+10.10.1.236 ├────────────────┤
+            │     libre      │  20 adresses
+10.10.2.0   └────────────────┘
+
+test:
+192.168.10.0/24
+
+Ventes:
+n = 32 - (ln(62)/ln(2)) = 26
+/26 = 255.255.255.192
+adresse reseau: 192.168.10.0
+adresse broadcast: 192.168.10.63
+plage utilisable: 192.168.10.1-192.168.10.62
+
+IT:
+n = 32 - (ln(27)/ln(2)) = 27
+/27 = 255.255.255.224
+adresse reseau: 192.168.10.64
+adresse broadcast: 192.168.10.95
+plage utilisable: 192.168.10.65-192.168.10.94
+
+RH:
+n = 32 - (ln(12)/ln(2)) = 28
+/28 = 255.255.255.240
+adresse reseau: 192.168.10.96
+adresse broadcast: 192.168.10.111
+plage utilisable: 192.168.10.97-192.168.10.110
+
+Salle de reunion:
+n = 32 - (ln(4)/ln(2)) = 30
+/30 = 255.255.255.252
+adresse reseau: 192.168.10.112
+adresse broadcast: 192.168.10.115
+plage utilisable: 192.168.10.113-192.168.10.114
+
+rest = 256 - (2^(32-26) + 2^(32-27) + 2^(32-28) + 2^(32-30)) = 140
+et ca commence a 192.168.10.116

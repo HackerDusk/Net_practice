@@ -50,21 +50,24 @@
                         - [calculat.io](https://calculat.io/en/number/bin-to-dec)
                         - [Magic Number and Binary Calculation!](https://youtu.be/SMW3enlScT8?si=x-7MFmnhC-gohJNX)
                         - [ionos.fr](https://www.ionos.fr/digitalguide/serveur/know-how/subnetting-comment-fonctionnent-les-sous-reseaux/)
-
+            - [Subnet Mask – Complete Guide](https://www.formip.com/pages/blog/masque-de-sous-reseau)
             - [magic number methode](https://youtu.be/SMW3enlScT8?si=8Cp5P6TnjeQgfOKV)
+            - [FLSM & VLSM](https://ipcisco.com/lesson/vlsm-subnetting/)
+            - [IPv4 Subnetting Cheat Sheet (CIDR, Mask & Special IP Ranges)](https://ipcisco.com/subnetting-cheat-sheet/)
             - MAC Address:
                 - What is a MAC address?:
                     - [doc1](https://www.formip.com/pages/blog/adresse-mac)
                     - [doc2](https://windscribe.com/fr/knowledge-base/articles/what-is-mac-spoofing-and-how-to-use-it)
                 - [MAC Address vs. IP Address: What’s the difference?](https://www.formip.com/pages/blog/adresse-mac)
-            - [The 14 essential protocols](https://www.lemagit.fr/conseil/Reseau-comprendre-les-14-protocoles-essentiels)
-            - [ARP protocol](https://www.fortinet.com/fr/resources/cyberglossary/what-is-arp)
             - [DHCP protocol](https://learn.microsoft.com/fr-fr/windows-server/networking/technologies/dhcp/dhcp-top)
-            - [What is a domain name?](https://www.one2net.fr/nom-domaine/qu-est-ce-qu-un-nom-de-domaine/)
+            - [ARP protocol](https://www.fortinet.com/fr/resources/cyberglossary/what-is-arp)
+            - [What is a domain name ?](https://www.one2net.fr/nom-domaine/qu-est-ce-qu-un-nom-de-domaine/)
+            - [What is the DNS protocol?](https://www.ibm.com/fr-fr/think/topics/dns-protocol)
             - TCP/IP Addressing:
                 - [doc1](https://www.ibm.com/docs/fr/aix/7.3.0?topic=protocol-tcpip-addressing)
-                - [doc2](https://www.ibm.com/docs/fr/aix/7.3.0?topic=management-transmission-control-protocolinternet-protocol)
-
+                - [doc2](https://www.geeksforgeeks.org/computer-networks/tcp-ip-model/)
+            - [What is UDP?](https://www.fortinet.com/fr/resources/cyberglossary/user-datagram-protocol-udp)
+            - [The 14 essential protocols(HTTP/HTTPS and so on)](https://www.lemagit.fr/conseil/Reseau-comprendre-les-14-protocoles-essentiels)
     - [MAN](https://www.edrawsoft.com/fr/article/man-network-diagram.html)
     - WAN:
         - [LAN vs WAN]:
@@ -74,14 +77,7 @@
 - [The flow of information within a computer network](The flow of information within a computer network)
 - [Bandwidth vs. throughput](https://www.tp-link.com/fr/blog/208/bande-passante-vs-d%C3%A9bit/)
 - [The Best Way To Learn Networking](https://www.youtube.com/watch?v=OBqCYxhwR_o)
-
 - Not checked yet:
-    - [lk2](https://web.maths.unsw.edu.au/~lafaye/CCM/internet/port.htm)
-    - [TCP/IP vs OSI](https://www.geeksforgeeks.org/computer-networks/tcp-ip-model/)
-    - [lk3](https://www.domolane.fr/glossaire-reseau/)
-    - [lk5](https://www.it-connect.fr/les-types-de-reseaux-lan-man-wan-et-pan-pour-les-debutants/)
-    - [lk6](https://www.formip.com/pages/blog/masque-de-sous-reseau)
-    - [lk7](https://ipcisco.com/subnetting-cheat-sheet/)
     - Default Gateway:
         - [What is a default gateway?](https://www.cloudflare.com/learning/network-layer/what-is-a-default-gateway/)
     - OSI Model:
@@ -89,7 +85,6 @@
     - History of IP addressing (classful → subnetting → CIDR):
     - [RFC 950 — Internet Standard Subnetting Procedure (1985)](https://www.rfc-editor.org/rfc/rfc950)
     - [RFC 1519 — Classless Inter-Domain Routing (CIDR) (1993)](https://www.rfc-editor.org/rfc/rfc1519)
-    - [Classless Inter-Domain Routing (CIDR) explained](https://networklessons.com/subnetting/classless-interdomain-routing-cidr)
     - static route destination gateway explained (anglais, en général plus de contenu clair)
     - table de routage réseau passerelle (français)
     - longest prefix match routing — si tu veux comprendre comment on choisit entre plusieurs routes qui matchent toutes une - - même IP (mentionné juste avant, mais pas creusé)

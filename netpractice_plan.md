@@ -86,14 +86,17 @@ Et le total CIDR = (nombre d'octets à 255 × 8) + ces bits-là. Ex : 255.255.25
 **Exercices** : cherche → `powers of 2 table subnetting cheat sheet drill`
 
 ## A6. VLSM (Variable Length Subnet Masking)
+[OK]
 **Pourquoi** : plusieurs niveaux imposent des sous-réseaux de tailles différentes. Un lien entre deux routeurs est un sous-réseau à part entière, souvent très petit (par exemple un `/30`). Si tu ne sais pas dimensionner un sous-réseau selon le nombre d'hôtes réellement nécessaires, tu casses le plan d'adressage.
 **Exercices** : cherche → `VLSM practice exercises variable length subnet mask examples`
 
 ## A7. Rôle du switch vs rôle du routeur
+[OK]
 **Pourquoi** : le diagramme mélange les deux. Un switch relie des appareils du même réseau (adresses MAC, rien à configurer en IP) ; un routeur relie des réseaux différents et a **une IP par interface**. Les confondre fait échouer un niveau entier sans que tu comprennes pourquoi.
 **Exercices** : pas nécessaire. C'est conceptuel : explique-le avec l'analogie rue / carrefour.
 
 ## A8. Passerelle par défaut (default gateway)
+[OK]
 **Pourquoi** : erreur n°1 dans NetPractice. Un hôte ne connaît que son propre réseau ; tout ce qui sort passe par le gateway, qui doit lui-même être **dans le même sous-réseau** que l'hôte.
 **Exercices** : refais à voix haute l'exemple « comment réussir la piscine » de tes notes.
 
