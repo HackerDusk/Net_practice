@@ -101,14 +101,17 @@ Et le total CIDR = (nombre d'octets à 255 × 8) + ces bits-là. Ex : 255.255.25
 **Exercices** : refais à voix haute l'exemple « comment réussir la piscine » de tes notes.
 
 ## A9. Table de routage & route par défaut (0.0.0.0/0)
+[OK]
 **Pourquoi** : les routeurs à plusieurs interfaces ont besoin d'une table cohérente. Comprends « destination / next hop », pourquoi `0.0.0.0/0` est le filet de sécurité, et que le routeur choisit la **route la plus spécifique** (préfixe le plus long) quand plusieurs correspondent.
 **Exercices** : cherche → `routing table default route longest prefix match practice`
 
 ## A10. Lecture des logs de NetPractice (« Forward way »)
+[OK]
 **Pourquoi** : c'est ton débogueur intégré. Il indique exactement où le paquet meurt (pas d'interface correspondante, pas de route, mauvaise destination). Le lire vite fait gagner un temps énorme en évaluation.
 **Exercices** : aucun externe. Casse volontairement une config (change un masque, enlève une route) et observe le message.
 
 ## A11. Méthodologie de débogage réseau
+[OK]
 **Pourquoi** : « IP correcte ? masque cohérent ? gateway dans le même sous-réseau ? route existe ? » est la checklist de tout admin réseau ou pentester. Réutilisable à vie.
 **Exercices** : cherche → `network troubleshooting checklist IP addressing common mistakes`
 

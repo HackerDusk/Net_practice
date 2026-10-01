@@ -80,7 +80,6 @@
             - [doc1](https://www.scribd.com/document/909426972/LES-COMPOSANTS-DES-RESEAUX-LAN-ET-WAN)
             - [doc2](https://www.lafibrelyonnaise.fr/lan-vs-wan)
     - [successive Euclidean divisions review](https://www.logamaths.fr/pgcd-divisions-euclidiennes-successives-algorithme-d-euclide/)
-- [Bandwidth vs. throughput](https://www.tp-link.com/fr/blog/208/bande-passante-vs-d%C3%A9bit/)
 - [The Best Way To Learn Networking](https://www.youtube.com/watch?v=OBqCYxhwR_o)
 - OSI Model:
     - [What is the OSI model?](https://www.ionos.fr/digitalguide/serveur/know-how/le-modele-osi-reference-pour-les-standards/)
@@ -89,7 +88,10 @@
     - shielded cabling (STP)
         - [definition](https://www.cae-groupe.com/guide-blindage-cable)
         - [STP 3D model](https://sketchfab.com/3d-models/shielded-twisted-pair-ethernet-cable-ad9aaf30f56f4c97a95fa8fb5c6721c1)
-
+    - [Bandwidth vs. throughput](https://www.tp-link.com/fr/blog/208/bande-passante-vs-d%C3%A9bit/)
+    - [Latency](https://infofibre.fr/glossaire/latence)
+- Link not checked yet:
+    - [layer2](https://www.ionos.fr/digitalguide/serveur/know-how/couche-liaison-de-donnees/)
 ## Quick calculation reminder
 
 ### Definitions (read first)
