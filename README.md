@@ -41,7 +41,7 @@
                 - [modem 3D model](https://sketchfab.com/3d-models/simple-modem-8ef942f9125a4e09978021ec190cca4e)
                 - [What is a Network Interface Card?](https://web.maths.unsw.edu.au/~lafaye/CCM/pc/carte-reseau.htm)
                 - [NIC 3D model](https://sketchfab.com/3d-models/network-interface-card-191c8ad40de2430980b879615aa0d2e3)
-            - Address IP:
+            - IP Address:
                 - [definition](https://www.formip.com/pages/blog/adresse-ip)
                 - Subnetting:
                     - [What is subnetting?](https://www.ionos.fr/digitalguide/serveur/know-how/subnetting-comment-fonctionnent-les-sous-reseaux/)
@@ -59,13 +59,19 @@
                     - [doc1](https://www.formip.com/pages/blog/adresse-mac)
                     - [doc2](https://windscribe.com/fr/knowledge-base/articles/what-is-mac-spoofing-and-how-to-use-it)
                 - [MAC Address vs. IP Address: What’s the difference?](https://www.formip.com/pages/blog/adresse-mac)
+            - [Routing: how packets find their way](https://blog.stephane-robert.info/docs/reseaux/fondamentaux/routage/#la-passerelle-gateway--la-sortie-de-votre-r%C3%A9seau)
+            - [How to configure the default gateway](https://www.tp-link.com/fr-ca/support/faq/1126/)
+            - [default routes](https://www.ibm.com/docs/fr/i/7.5.0?topic=concepts-default-routes)
+            - [What is a default gateway?](https://protonvpn.com/fr/blog/default-gateway)
+            - What is a routing table?:
+                - [doc1](https://www.coursera.org/fr-FR/articles/routing-table)
+                - [doc2](https://blog.stephane-robert.info/docs/cloud/architecture/03-tables-routage-et-gateways/)
+            - [Debugging a network outage like a pro: a checklist of steps to follow](https://www.wildcodeschool.com/blog/d%C3%A9boguer-une-panne-r%C3%A9seau-comme-un-pro-checklist-des-%C3%A9tapes-%C3%A0-suivre)
             - [DHCP protocol](https://learn.microsoft.com/fr-fr/windows-server/networking/technologies/dhcp/dhcp-top)
             - [ARP protocol](https://www.fortinet.com/fr/resources/cyberglossary/what-is-arp)
             - [What is a domain name ?](https://www.one2net.fr/nom-domaine/qu-est-ce-qu-un-nom-de-domaine/)
             - [What is the DNS protocol?](https://www.ibm.com/fr-fr/think/topics/dns-protocol)
-            - TCP/IP Addressing:
-                - [doc1](https://www.ibm.com/docs/fr/aix/7.3.0?topic=protocol-tcpip-addressing)
-                - [doc2](https://www.geeksforgeeks.org/computer-networks/tcp-ip-model/)
+            - [TCP/IP Addressing](https://www.avast.com/fr-fr/c-what-is-tcp-ip)
             - [What is UDP?](https://www.fortinet.com/fr/resources/cyberglossary/user-datagram-protocol-udp)
             - [The 14 essential protocols(HTTP/HTTPS and so on)](https://www.lemagit.fr/conseil/Reseau-comprendre-les-14-protocoles-essentiels)
     - [MAN](https://www.edrawsoft.com/fr/article/man-network-diagram.html)
@@ -74,25 +80,15 @@
             - [doc1](https://www.scribd.com/document/909426972/LES-COMPOSANTS-DES-RESEAUX-LAN-ET-WAN)
             - [doc2](https://www.lafibrelyonnaise.fr/lan-vs-wan)
     - [successive Euclidean divisions review](https://www.logamaths.fr/pgcd-divisions-euclidiennes-successives-algorithme-d-euclide/)
-- [The flow of information within a computer network](The flow of information within a computer network)
 - [Bandwidth vs. throughput](https://www.tp-link.com/fr/blog/208/bande-passante-vs-d%C3%A9bit/)
 - [The Best Way To Learn Networking](https://www.youtube.com/watch?v=OBqCYxhwR_o)
-- Not checked yet:
-    - Default Gateway:
-        - [What is a default gateway?](https://www.cloudflare.com/learning/network-layer/what-is-a-default-gateway/)
-    - OSI Model:
-        - [The OSI model explained](https://www.cloudflare.com/learning/ossi-model/what-is-the-osi-model/)
-    - History of IP addressing (classful → subnetting → CIDR):
-    - [RFC 950 — Internet Standard Subnetting Procedure (1985)](https://www.rfc-editor.org/rfc/rfc950)
-    - [RFC 1519 — Classless Inter-Domain Routing (CIDR) (1993)](https://www.rfc-editor.org/rfc/rfc1519)
-    - static route destination gateway explained (anglais, en général plus de contenu clair)
-    - table de routage réseau passerelle (français)
-    - longest prefix match routing — si tu veux comprendre comment on choisit entre plusieurs routes qui matchent toutes une - - même IP (mentionné juste avant, mais pas creusé)
-    - default route 0.0.0.0/0 — pour retomber sur exactement ce qu'on vient de voir, formulé par d'autres
-    - IP routing table longest prefix match
-    - default route vs default gateway
-    - le VLSM (découper un réseau à l'envers, à partir d'un besoin en hôtes) et le dépannage multi-sauts (plusieurs routeurs à la suite, plusieurs routes à corriger en chaîne). 
-
+- OSI Model:
+    - [What is the OSI model?](https://www.ionos.fr/digitalguide/serveur/know-how/le-modele-osi-reference-pour-les-standards/)
+    - [Physical layer](https://www.ionos.fr/digitalguide/serveur/know-how/couche-physique/)
+    - [CRC: Definition and Uses](https://fr.wikipedia.org/wiki/Contr%C3%B4le_de_redondance_cyclique)
+    - shielded cabling (STP)
+        - [definition](https://www.cae-groupe.com/guide-blindage-cable)
+        - [STP 3D model](https://sketchfab.com/3d-models/shielded-twisted-pair-ethernet-cable-ad9aaf30f56f4c97a95fa8fb5c6721c1)
 
 ## Quick calculation reminder
 
