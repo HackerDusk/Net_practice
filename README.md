@@ -1,6 +1,49 @@
-*This project has been created as part of the 42 curriculum by srandro*
+_This project has been created as part of the 42 curriculum by srandro._
 
 # Net_practice
+
+## Description
+
+NetPractice is a hands-on introduction to computer networking. The project consists of **10 levels** played in a browser-based training interface that simulates small networks (hosts, routers, switches and the Internet). Each level starts with a broken network and one or more goals, for example "host A must communicate with host B" or "host C must reach the Internet".
+
+The goal is to fix the configuration (IP addresses, subnet masks, default gateways and routing tables) until every goal succeeds, both on the forward way and on the reverse way. The networks are simulated and are not real networks.
+
+Through the 10 levels, the project practices:
+
+- IPv4 addressing: network address, broadcast address and valid host addresses
+- Subnet masks, CIDR notation and subnetting (block size, splitting a larger block into smaller subnets)
+- Default gateways, default routes and specific routes in a routing table
+- The role of routers (connect networks) and switches (connect machines inside one network)
+- Reading the simulator's logs to diagnose why a packet does not arrive
+
+## Instructions
+
+### Run the training interface
+
+1. Download the archive attached to the project page and extract it in any folder.
+2. In this folder, run the launcher:
+
+   ```bash
+   ./run.sh
+   ```
+
+   It starts a local web server and opens the default browser on the training page.
+3. If `run.sh` does not work, start the server manually and open the page yourself:
+
+   ```bash
+   python3 -m http.server 49242
+   # then open http://localhost:49242 in the browser (the port can be changed)
+   ```
+4. In the **Training** tab, enter your intranet login and click **Start!**. The **Evaluation** tab generates a random configuration, like the one used during the defense.
+
+### Work on a level
+
+- Edit the unshaded fields (IP, mask, routes). Shaded fields are fixed by the level.
+- Click **Check again** to test the configuration. The **logs** at the bottom of the page explain why a goal fails.
+- When every goal is OK, a **Next level** button appears.
+
+### Export the configurations
+- Before leaving a level, click **Get my config** if you want to download its configuration file.
 
 # Ressources:
 - [`Learn everything by practice on networksim.app (I love this one)`](https://networksim.app/)
