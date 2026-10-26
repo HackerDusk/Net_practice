@@ -2,6 +2,20 @@ _This project has been created as part of the 42 curriculum by srandro._
 
 # Net_practice
 
+## Table of Contents
+
+- [Description](#description)
+- [Instructions](#instructions)
+  - [Run the training interface](#run-the-training-interface)
+  - [Work on a level](#work-on-a-level)
+  - [Export the configurations](#export-the-configurations)
+  - [Submission](#submission)
+- [Resources](#resources)
+  - [AI usage](#ai-usage)
+- [Quick calculation reminder](#quick-calculation-reminder)
+  - [Definitions](#definitions-read-first)
+  - [Method](#method)
+
 ## Description
 
 NetPractice is a hands-on introduction to computer networking. The project consists of **10 levels** played in a browser-based training interface that simulates small networks (hosts, routers, switches and the Internet). Each level starts with a broken network and one or more goals, for example "host A must communicate with host B" or "host C must reach the Internet".
@@ -45,7 +59,11 @@ Through the 10 levels, the project practices:
 ### Export the configurations
 - Before leaving a level, click **Get my config** if you want to download its configuration file.
 
-# Ressources:
+### Submission
+10 exported configuration files (one per level, generated with the **Get my config** button) must be placed at the root of the repository. The login must be entered in the training interface before exporting, otherwise the files will not be valid for the defense.
+
+## Resources
+Networking concepts studied: TCP/IP addressing, subnet masks, default gateways, routers and switches, OSI layers.
 - [`Learn everything by practice on networksim.app (I love this one)`](https://networksim.app/)
 - [What is the Internet? Computer networks](https://youtu.be/JqweQE6TDTc?si=YUSM_-i7HTAc4-Hk)
 - [What is a computer peripheral, and why is it important?](https://www.lenovo.com/fr/fr/glossary/computer-peripheral/?orgRef=https%253A%252F%252Fwww.google.com%252F)
@@ -136,6 +154,19 @@ Through the 10 levels, the project practices:
     - [data link layer (MAC, switches)](https://www.ionos.fr/digitalguide/serveur/know-how/couche-liaison-de-donnees/)
     - [network layer (IP, routers)](https://www.ionos.ca/digitalguide/server/know-how/network-layer/)
     - [transport layer (TCP/UDP, ports)](https://www.ionos.ca/digitalguide/server/know-how/transport-layer/)
+    - [session layer (session management)](https://www.ionos.ca/digitalguide/server/know-how/session-layer/)
+    - [presentation layer (data translation, encryption, and compression)](https://www.ionos.ca/digitalguide/server/know-how/presentation-layer/)
+    - [application layer (the layer the user is using)](https://www.ionos.ca/digitalguide/server/know-how/application-layer/)
+
+### AI usage
+
+AI was used as a learning assistant, never to solve the levels for me:
+
+- **Finding resources**: to discover `deeper` documentation about networking concepts (subnetting, gateways, routing tables, OSI model).
+- **Clarifying concepts**: to re-explain parts that were unclear in some documentations.
+- **Summaries and review**: to help write short summaries of the OSI layers and to check this README against the subject requirements.
+
+> The project was developed with a focus on understanding, experimentation, and mainly peer learning.
 
 ## Quick calculation reminder
 
