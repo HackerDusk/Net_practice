@@ -64,19 +64,18 @@ Through the 10 levels, the project practices:
 
 ## Resources
 Networking concepts studied: TCP/IP addressing, subnet masks, default gateways, routers and switches, OSI layers.
-- [`Learn everything by practice on networksim.app (I love this one)`](https://networksim.app/)
+- [`Learn everything by practice on networksim`](https://networksim.app/)
 - [What is the Internet? Computer networks](https://youtu.be/JqweQE6TDTc?si=YUSM_-i7HTAc4-Hk)
 - [What is a computer peripheral, and why is it important?](https://www.lenovo.com/fr/fr/glossary/computer-peripheral/?orgRef=https%253A%252F%252Fwww.google.com%252F)
 - List of key vocabularies:
     - [Host](https://developer.mozilla.org/fr/docs/Glossary/Host)
     - Client:
-        - [doc1](https://kxs.fr/cours/ihm-web/client-serveur-requete)
-        - [doc2](https://fr.wikipedia.org/wiki/Client_(informatique))
+        - [kxs.fr](https://kxs.fr/cours/ihm-web/client-serveur-requete)
+        - [wikipedia](https://fr.wikipedia.org/wiki/Client_(informatique))
     - Server:
-        - [doc1](https://www.ionos.fr/digitalguide/serveur/know-how/quest-ce-quun-serveur-une-notion-deux-definitions/)
-        - [doc2](https://www.hpe.com/emea_africa/fr/what-is/servers.html)
+        - [ionos.fr](https://www.ionos.fr/digitalguide/serveur/know-how/quest-ce-quun-serveur-une-notion-deux-definitions/)
+        - [hpe.com](https://www.hpe.com/emea_africa/fr/what-is/servers.html)
     - [Internet](https://ccn.unistra.fr/websites/ccn/documentation/Guides-Kits/Mailo_Internet_v1_1_fr.pdf)
-- means of communication:
 - Types of Network - PAN, LAN, WAN and MAN - classifies a network primarily according to its extent or range:
    - [All at once](https://www.geeksforgeeks.org/computer-networks/types-of-area-networks-lan-man-and-wan/)
    - [PAN](https://www.techtarget.com/enterprise-software/definition/What-is-a-personal-area-network-PAN)
@@ -138,8 +137,8 @@ Networking concepts studied: TCP/IP addressing, subnet masks, default gateways, 
     - [MAN](https://www.edrawsoft.com/fr/article/man-network-diagram.html)
     - WAN:
         - [LAN vs WAN]:
-            - [doc1](https://www.scribd.com/document/909426972/LES-COMPOSANTS-DES-RESEAUX-LAN-ET-WAN)
-            - [doc2](https://www.lafibrelyonnaise.fr/lan-vs-wan)
+            - [scribd.com](https://www.scribd.com/document/909426972/LES-COMPOSANTS-DES-RESEAUX-LAN-ET-WAN)
+            - [lafibrelyonnaise.fr](https://www.lafibrelyonnaise.fr/lan-vs-wan)
     - [successive Euclidean divisions review](https://www.logamaths.fr/pgcd-divisions-euclidiennes-successives-algorithme-d-euclide/)
 - [The Best Way To Learn Networking](https://www.youtube.com/watch?v=OBqCYxhwR_o)
 - OSI Model:
