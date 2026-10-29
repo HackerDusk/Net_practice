@@ -38,7 +38,7 @@ Through the 10 levels, the project practices:
 2. In this folder, run the launcher:
 
    ```bash
-   ./run.sh
+   chmod +x run.sh && ./run.sh
    ```
 
    It starts a local web server and opens the default browser on the training page.
@@ -59,12 +59,14 @@ Through the 10 levels, the project practices:
 ### Export the configurations
 - Before leaving a level, click **Get my config** if you want to download its configuration file.
 
-### Submission
+### Submission details
 10 exported configuration files (one per level, generated with the **Get my config** button) must be placed at the root of the repository. The login must be entered in the training interface before exporting, otherwise the files will not be valid for the defense.
 
 ## Resources
 Networking concepts studied: TCP/IP addressing, subnet masks, default gateways, routers and switches, OSI layers.
-- [`Learn everything by practice on networksim`](https://networksim.app/)
+- Learn everything by practice and visualization on:
+    - [networksim](https://networksim.app/)
+    - [learnccna](https://learnccna.org/domain/1/1-1/)
 - [What is the Internet? Computer networks](https://youtu.be/JqweQE6TDTc?si=YUSM_-i7HTAc4-Hk)
 - [What is a computer peripheral, and why is it important?](https://www.lenovo.com/fr/fr/glossary/computer-peripheral/?orgRef=https%253A%252F%252Fwww.google.com%252F)
 - List of key vocabularies:
@@ -116,16 +118,16 @@ Networking concepts studied: TCP/IP addressing, subnet masks, default gateways, 
             - [IPv4 Subnetting Cheat Sheet (CIDR, Mask & Special IP Ranges)](https://ipcisco.com/subnetting-cheat-sheet/)
             - MAC Address:
                 - What is a MAC address?:
-                    - [doc1](https://www.formip.com/pages/blog/adresse-mac)
-                    - [doc2](https://windscribe.com/fr/knowledge-base/articles/what-is-mac-spoofing-and-how-to-use-it)
+                    - [formip.com](https://www.formip.com/pages/blog/adresse-mac)
+                    - [windscribe.com](https://windscribe.com/fr/knowledge-base/articles/what-is-mac-spoofing-and-how-to-use-it)
                 - [MAC Address vs. IP Address: What’s the difference?](https://www.formip.com/pages/blog/adresse-mac)
             - [Routing: how packets find their way](https://blog.stephane-robert.info/docs/reseaux/fondamentaux/routage/#la-passerelle-gateway--la-sortie-de-votre-r%C3%A9seau)
             - [How to configure the default gateway](https://www.tp-link.com/fr-ca/support/faq/1126/)
             - [default routes](https://www.ibm.com/docs/fr/i/7.5.0?topic=concepts-default-routes)
             - [What is a default gateway?](https://protonvpn.com/fr/blog/default-gateway)
             - What is a routing table?:
-                - [doc1](https://www.coursera.org/fr-FR/articles/routing-table)
-                - [doc2](https://blog.stephane-robert.info/docs/cloud/architecture/03-tables-routage-et-gateways/)
+                - [formip.com](https://www.coursera.org/fr-FR/articles/routing-table)
+                - [stephane-robert.info](https://blog.stephane-robert.info/docs/cloud/architecture/03-tables-routage-et-gateways/)
             - [Debugging a network outage like a pro: a checklist of steps to follow](https://www.wildcodeschool.com/blog/d%C3%A9boguer-une-panne-r%C3%A9seau-comme-un-pro-checklist-des-%C3%A9tapes-%C3%A0-suivre)
             - [DHCP protocol](https://learn.microsoft.com/fr-fr/windows-server/networking/technologies/dhcp/dhcp-top)
             - [ARP protocol](https://www.fortinet.com/fr/resources/cyberglossary/what-is-arp)
@@ -136,7 +138,7 @@ Networking concepts studied: TCP/IP addressing, subnet masks, default gateways, 
             - [The 14 essential protocols(HTTP/HTTPS and so on)](https://www.lemagit.fr/conseil/Reseau-comprendre-les-14-protocoles-essentiels)
     - [MAN](https://www.edrawsoft.com/fr/article/man-network-diagram.html)
     - WAN:
-        - [LAN vs WAN]:
+        - LAN vs WAN:
             - [scribd.com](https://www.scribd.com/document/909426972/LES-COMPOSANTS-DES-RESEAUX-LAN-ET-WAN)
             - [lafibrelyonnaise.fr](https://www.lafibrelyonnaise.fr/lan-vs-wan)
     - [successive Euclidean divisions review](https://www.logamaths.fr/pgcd-divisions-euclidiennes-successives-algorithme-d-euclide/)
@@ -158,12 +160,13 @@ Networking concepts studied: TCP/IP addressing, subnet masks, default gateways, 
     - [application layer (the layer the user is using)](https://www.ionos.ca/digitalguide/server/know-how/application-layer/)
 
 ### AI usage
+AI served solely as a pedagogical support tool—never to bypass project challenges:
 
-AI was used as a learning assistant, never to solve the levels for me:
-
-- **Finding resources**: to discover `deeper` documentation about networking concepts (subnetting, gateways, routing tables, OSI model).
-- **Clarifying concepts**: to re-explain parts that were unclear in some documentations.
-- **Summaries and review**: to help write short summaries of the OSI layers and to check this README against the subject requirements.
+- **Self-Assessment:** Using exercises and QCMs to validate real understanding.
+- **Resource Discovery:** Finding advanced technical documentation on networking (subnetting, routing, OSI model).
+- **Concept Clarification:** Simplifying complex or unclear explanations.
+- **Review & Summaries:** Structuring OSI layer summaries and checking README compliance.
+- **Visualization:** Building mental models to make abstract ideas intuitive.
 
 > The project was developed with a focus on understanding, experimentation, and mainly peer learning.
 
@@ -191,3 +194,8 @@ AI was used as a learning assistant, never to solve the levels for me:
 | 5. Broadcast address | On the cut octet: `(quotient × block) + block − 1`. Octets before: same as the IP. Octets after: `255`. | Last address of the slice = all host bits set to 1. |
 | 6. Same subnet, two hosts? | Octets **before** the cut octet identical **AND** the two quotients (on the cut octet) identical | Easy trap when only working on the 4th octet: the 1st condition is automatically true there, so it gets forgotten. With /20, /18, etc., two hosts can share the same quotient but differ in an earlier octet — that is **not** the same subnet. |
 | 7. Is the address valid? | remainder `= 0` → network address (invalid). remainder `= block − 1` → broadcast (invalid). Otherwise → valid host. **This rule alone only holds when the cut octet is the LAST octet of the address.** If it isn't the last one, also check the octet(s) **after** it: they must be `0` to confirm "network", or `255` to confirm "broadcast" — otherwise a remainder of 0 or block−1 can still be a perfectly valid host address. | Network and broadcast name the slice itself, never a machine — but that identity only holds when there's nothing left to check after the cut point. |
+
+#### Références:
+- [Cisco — Understand Host and Subnet Quantities](https://www.cisco.com/c/en/us/support/docs/ip/routing-information-protocol-rip/13790-8.html?utm_source=chatgpt.com)
+- [LearnCCNA — IPv4 Addressing and Subnetting](https://learnccna.org/domain/1/1-6/)
+
